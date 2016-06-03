@@ -6,6 +6,10 @@
   "directories": {
     "test": "test"
   },
+  "devDependencies": {
+    "laravel-elixir": "*",
+    "material-design-lite": "*"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
