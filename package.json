@@ -1,6 +1,6 @@
 {
   "name": "laravel-materialize",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Material Design Lite integration for Laravel.",
   "main": "index.js",
   "directories": {
