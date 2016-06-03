@@ -1,0 +1,29 @@
+{
+  "name": "laravel-materialize",
+  "version": "1.0.0",
+  "description": "Material Design Lite integration for Laravel.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tam5/laravel-materialize.git"
+  },
+  "keywords": [
+    "material-design",
+    "material-design-lite",
+    "material",
+    "design",
+    "Laravel"
+  ],
+  "author": "Ari Miller",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tam5/laravel-materialize/issues"
+  },
+  "homepage": "https://github.com/tam5/laravel-materialize#readme"
+}
