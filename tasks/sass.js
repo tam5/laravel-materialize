@@ -1,5 +1,5 @@
 var Elixir = require('laravel-elixir');
-var Config = require('../config');
+var Config = require('../Config');
 var fs     = require('fs');
 
 var materializeSassFile = './node_modules/laravel-materialize/tmp/materialize.scss';

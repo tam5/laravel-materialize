@@ -1,5 +1,5 @@
 var Elixir = require('laravel-elixir');
-var Config = require('../config');
+var Config = require('../Config');
 
 /**
  * Copy over the material images.
