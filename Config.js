@@ -7,7 +7,7 @@ var Elixir = require('laravel-elixir');
  |
  | These properties tell the package where to find the source files 
  | for your application assets. By default these properties will
- | differ Elixir's configuration, for a much easier workflow.
+ | differ to Elixir's configuration, but you may change them.   
  |
  */
 var sassPath      = Elixir.config.assetsPath + '/' + Elixir.config.css.sass.folder + '/';
@@ -32,9 +32,9 @@ var imagesOutputFolder = Elixir.config.publicPath + '/images';
  | 'Material Design Lite' Source Location
  |----------------------------------------------------------------
  |
- | Once all of the Material Design Lite files have been merged 
- | and compiled, they'll be saved to your public directory.
- | Here you can choose exactly where they will be saved.
+ | The location of 'Material Design Lite' source files is
+ | specified here. You really shouldn't have to change
+ | this. However, you may change it if you need to.
  |
  */
 var mdlPath     = 'node_modules/material-design-lite/src/';
