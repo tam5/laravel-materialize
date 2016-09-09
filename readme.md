@@ -16,6 +16,8 @@ laravel new app
 
 For help creating a new Laravel application, have a quick look at the [docs](https://laravel.com/docs/5.3/installation).
 
+Next, install the package.
+
 ```sh
 npm install laravel-materialize --save-dev
 ```
