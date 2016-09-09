@@ -8,6 +8,14 @@ With the help of Laravel Elixir, this package pulls in the components from Googl
 
 ##### Install:
 
+This package can work with new or existing Laravel projects. If you don't already have a Laravel application, create one.
+
+```sh
+laravel new app
+```
+
+For help creating a new Laravel application, have a quick look at the [docs](https://laravel.com/docs/5.3/installation).
+
 ```sh
 npm install laravel-materialize --save-dev
 ```
@@ -18,10 +26,14 @@ In your `gulpfile.js`, require and use the package. For example:
 
 ```javascript
 var elixir = require('laravel-elixir');
+
 require('laravel-materialize');
- 
-elixir(function(mix) {
-  mix.materialize();
+require('laravel-elixir-vue');
+
+elixir(mix => {
+    mix.sass('app.scss')
+        .materialize()
+        .webpack('app.js');
 });
 ```
 
@@ -47,9 +59,34 @@ And this right before the end of your `<body>`
 
 Now go add mdl components and classes to your views! Check out the mdl [documentation](https://getmdl.io) for quick reference.
 
+For example, add a simple button to any of your views to make sure everything is working:
+
+```html
+<!-- Colored FAB button with ripple -->
+<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+  <i class="material-icons">add</i>
+</button>
+```
+
 ## Customization
 
-Want to change the colors of your app? How about the font? Want to tweak the defaults of Material Design to make it unique to your app? Sure, couldn't be easier! All you've got to do is create a `_variables.scss` file within `resources/assets/sass` and set the MDL variables to what you'd like. After you `gulp` all your assets will be updated with the new values you specified. Here is a quick reference on the most basic things you'll likely want to change:
+Want to change the colors of your app? How about the font? Want to tweak the defaults of Material Design to make it unique to your app? Sure, it's easy! 
+
+### Laravel 5.3
+
+Laravel 5.3 ships with a `resources/assets/sass/variables.scss` file which is imported by `resources/assets/sass/app.scss`. However, we want MDL to handle our styling.
+
+Remove the `@import "variables";` from `app.scss`, and then rename `variables.scss` to `_variables.scss`.
+
+**Note:** If you would like to have application specific variables, create a new file like `app_variables.scss` and import that from your `app.scss`.
+
+### Laravel < 5.3
+
+All you've got to do is create a `_variables.scss` file within `resources/assets/sass` and set the MDL variables to what you'd like. 
+
+### All Laravel versions continue here
+
+After you `gulp` all your assets will be updated with the new values you specified. Here is a quick reference on the most basic things you'll likely want to change:
 
 ```scss
 // colors
