@@ -42,7 +42,7 @@ function materializeSass () {
 
     if (variablesFileExists()) {
       imports.push('./' + Config.mdlPath + 'color-definitions');
-      imports.push('./' + Config.sassPath +'variables');
+      imports.push('./' + Config.sassPath + 'mdl-variables');
     }
 
     imports.push('./' + Config.mdlSassFile);

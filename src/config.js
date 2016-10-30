@@ -11,7 +11,7 @@ const Elixir = require('laravel-elixir');
  |
  */
 let sassPath      = Elixir.config.assetsPath + '/' + Elixir.config.css.sass.folder + '/';
-let variablesFile = sassPath + '_variables.scss';
+let variablesFile = sassPath + '_mdl-variables.scss';
 
 /*
  |----------------------------------------------------------------
