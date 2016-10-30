@@ -43,7 +43,6 @@ Include the assets in your layout by adding this to your `<head>`
 ```html
 <!-- Material Styles -->
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" href="/css/materialize.css">
 ```
 

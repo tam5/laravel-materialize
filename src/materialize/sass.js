@@ -52,6 +52,8 @@ function materializeSass () {
         toImport += "@import '" + sassPath + "';\n";
     });
 
+    toImport += "@import url(https://fonts.googleapis.com/icon?family=Material+Icons);\n"
+
     return toImport;
   }
 
