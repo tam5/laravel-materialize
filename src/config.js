@@ -1,4 +1,4 @@
-var Elixir = require('laravel-elixir');
+const Elixir = require('laravel-elixir');
 
 /*
  |----------------------------------------------------------------
@@ -10,8 +10,8 @@ var Elixir = require('laravel-elixir');
  | differ to Elixir's configuration, but you may change them.   
  |
  */
-var sassPath      = Elixir.config.assetsPath + '/' + Elixir.config.css.sass.folder + '/';
-var variablesFile = sassPath + '_variables.scss';
+let sassPath      = Elixir.config.assetsPath + '/' + Elixir.config.css.sass.folder + '/';
+let variablesFile = sassPath + '_variables.scss';
 
 /*
  |----------------------------------------------------------------
@@ -23,9 +23,9 @@ var variablesFile = sassPath + '_variables.scss';
  | Here you can choose exactly where they will be saved.
  |
  */
-var cssOutputFile      = Elixir.config.publicPath + '/css/materialize.css';
-var jsOutputFile       = Elixir.config.publicPath + '/js/materialize.js';
-var imagesOutputFolder = Elixir.config.publicPath + '/images';
+let cssOutputFile      = Elixir.config.publicPath + '/css/materialize.css';
+let jsOutputFile       = Elixir.config.publicPath + '/js/materialize.js';
+let imagesOutputFolder = Elixir.config.publicPath + '/images';
 
 /*
  |----------------------------------------------------------------
@@ -37,8 +37,8 @@ var imagesOutputFolder = Elixir.config.publicPath + '/images';
  | this. However, you may change it if you need to.
  |
  */
-var mdlPath     = 'node_modules/material-design-lite/src/';
-var mdlSassFile = mdlPath + 'styleguide';
+let mdlPath     = 'node_modules/material-design-lite/src/';
+let mdlSassFile = mdlPath + 'styleguide';
 
 
 /**
@@ -46,14 +46,14 @@ var mdlSassFile = mdlPath + 'styleguide';
  * so that they will be accessible cleanly as well   
  * as easily through the familiar dot notation.
  */
-var config = {
-    sassPath                     : sassPath,
-    mdlPath                      : mdlPath,
-    mdlSassFile                  : mdlSassFile,
-    variablesFile                : variablesFile,
-    cssOutputFile                : cssOutputFile,
-    jsOutputFile                 : jsOutputFile,
-    imagesOutputFolder           : imagesOutputFolder,
+const config = {
+  sassPath,
+  mdlPath,
+  mdlSassFile,
+  variablesFile,
+  cssOutputFile,
+  jsOutputFile,
+  imagesOutputFolder
 };
 
 module.exports = config;
