@@ -1,3 +1,7 @@
+**Note: This works for Laravel < 5.4.**
+
+<hr>
+
 <p align="center">
   <img width="300"src="https://cloud.githubusercontent.com/assets/11488762/19834991/f2b21774-9e4d-11e6-99f4-f0e582c38cd3.png">
 </p>
